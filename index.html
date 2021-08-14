@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Image Editor</title>
+</head>
+<body class="bg-light">
+    <div class="container">
+        <div class="row">
+            <div class=" bg-success py-3 shadow rounded col mx-auto">
+                <h1>Image Editor</h1>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-4 rounded-left" style="background-color: lightgreen;">
+                <h1 class="border-bottom">Editor</h1>
+               <form id="inputRangesForm">
+                <div class="form-group">
+                    <label for="gs">GrayScale</label>
+                    <input type="range" min="" max="100" value="0" name="grayscale" id="gs" class="form-control inputrange">
+                </div>
+                <div class="form-group">
+                    <label for="blue">Blur</label>
+                    <input type="range" min="" max="100" value="0" name="blue" id="blur" class="form-control inputrange">
+                </div>
+                <div class="form-group">
+                    <label for="hr">Hue Rotate</label>
+                    <input type="range" min="" max="360" value="0" name="hr" id="hr" class="form-control inputrange">
+                </div>
+                <div class="form-group">
+                    <label for="hr">Sepia</label>
+                    <input type="range" min="" max="100" value="0" name="sepia" id="sepia" class="form-control inputrange">
+                </div>
+
+                <div class="form-group">
+                    <label for="Invert">Invert</label>
+                    <input type="range" min="" max="100" value="0" name="Invert" id="invert" class="form-control inputrange">
+                </div>
+
+                <div class="form-group">
+                    <label for="contrast">Contrast</label>
+                    <input type="range" min="" max="1000" value="100" name="contrast" id="contrast" class="form-control inputrange">
+                </div>
+                
+                <div class="form-group">
+                    <label for="opacity">Opacity</label>
+                    <input type="range" min="0" max="100" value="100" name="opacity" id="opacity" class="form-control inputrange">
+                </div>
+
+                <div class="form-group">
+                    <label for="saturate">Saturate</label>
+                    <input type="range" min="0" max="1000" value="100" name="saturate" id="saturate" class="form-control inputrange">
+                </div>
+
+                <div class="form-group">
+                    <button type="reset" class="btn btn-secondary float-right ">Reset</button>
+                </div>
+               </form>
+            </div>
+            <div class="col-8 bg-white ">
+                <form class="form my-3" id="onlineImageUrlForm">
+                    <div class="form-group">
+                        <input type="text" name="image_url" id="image_url" placeholder="Image URL" class="form-control">
+                    </div>
+                </form>
+                <img src="images/image-2.jpg" alt="image" id="image" name="image" srcset="" class="image image-responsive mx-auto h-auto w-100" >
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
